@@ -6,6 +6,7 @@ stdenv.mkDerivation {
   src = fetchzip {
     url = "https://fourdaycreep.com/s/rBnnEYSWCAeeE6f/download/monolisa.zip";
     hash = "sha256-H+DhKCNvcA6BL7BCA0klGwjRVb9CLGFxmYEthFExGfI=";
+    stripRoot = false;
   };
 
   installPhase = ''
